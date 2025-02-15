@@ -1,0 +1,22 @@
+{
+  "name": "temp-pool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@raydium-io/raydium-sdk-v2": "^0.1.114-alpha",
+    "@solana/spl-token": "^0.4.12",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "decimal.js": "^10.5.0"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.6"
+  }
+}
