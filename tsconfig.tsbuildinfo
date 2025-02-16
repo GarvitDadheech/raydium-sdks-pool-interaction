@@ -1,1 +1,1 @@
-{"root":["./src/addLiquidity.ts","./src/checkPoolState.ts","./src/index.ts","./src/raydium.ts"],"version":"5.7.2"}
+{"root":["./src/addLiquidity.ts","./src/index.ts","./src/raydium.ts","./src/utils/checkExistingPool.ts"],"version":"5.7.2"}
