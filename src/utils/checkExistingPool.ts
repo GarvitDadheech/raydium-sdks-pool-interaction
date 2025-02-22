@@ -9,7 +9,6 @@ export async function checkExistingPool(token1Mint: string, token2Mint: string =
             mint1: token1Mint,
             mint2: token2Mint,
         });
-        console.log(poolInfo);
         if (poolInfo.data && poolInfo.data.length > 0) {
             console.log('Pool exists:', poolInfo.data[0]);
             return poolInfo.data[0];
@@ -33,5 +32,5 @@ export async function fetchPoolById(id: string) {
 }
 
 // Usage example:
-checkExistingPool('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v');
-fetchPoolById('4Yw4p37E3ABQuSzL78UYMqjsY6cMAvdYuCzQXQTvUAJ6');
+checkExistingPool('<TOKEN1_MINT>');
+fetchPoolById('<POOL_ID>');
