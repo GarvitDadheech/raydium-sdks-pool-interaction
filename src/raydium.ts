@@ -7,13 +7,13 @@ export const owner: Keypair = Keypair.fromSecretKey(bs58.decode('<Your Wallet Pr
 export const connection = new Connection('<YOUR_RPC_URL>') 
 // export const connection = new Connection(clusterApiUrl('devnet')) //<YOUR_RPC_URL>
 export const txVersion = TxVersion.V0 // or TxVersion.LEGACY
-const cluster = 'devnet' // 'mainnet' | 'devnet'
+const cluster = 'mainnet' // 'mainnet' | 'devnet'
 
 let raydium: Raydium | undefined
 export const initSdk = async (params?: { loadToken?: boolean }) => {
   if (raydium) return raydium
-  if (connection.rpcEndpoint === clusterApiUrl('devnet'))
-    console.warn('using free rpc node might cause unexpected error, strongly suggest uses paid rpc node')
+  // if (connection.rpcEndpoint === clusterApiUrl('devnet'))
+  //   console.warn('using free rpc node might cause unexpected error, strongly suggest uses paid rpc node')
   console.log(`connect to rpc ${connection.rpcEndpoint} in ${cluster}`)
   raydium = await Raydium.load({
     owner,
